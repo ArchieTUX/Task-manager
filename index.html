@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Task Manager</h1>
+    
+    <!-- Task input form -->
+    <div class="task-input-container">
+      <input type="text" id="taskTitle" placeholder="Task Title" required>
+      <textarea id="taskDescription" placeholder="Task Description"></textarea>
+      <input type="date" id="taskDeadline">
+      <select id="taskPriority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <!-- Task list -->
+    <div class="task-list">
+      <div class="task-category" id="toDoTasks">
+        <h2>To Do</h2>
+      </div>
+      
+      <div class="task-category" id="inProgressTasks">
+        <h2>In Progress</h2>
+      </div>
+
+      <div class="task-category" id="doneTasks">
+        <h2>Done</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
