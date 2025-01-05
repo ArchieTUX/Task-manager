@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background for the Netflix vibe */
+  color: #e6e6e6; /* Light text for contrast */
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #d9534f;
+  margin-bottom: 40px;
+}
+
+/* Task Input Form */
+.task-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+input, textarea, select, button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+  border-color: #d9534f; /* Focus effect */
+}
+
+button {
+  background-color: #d9534f;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #c9302c;
+}
+
+/* Task List Styles */
+.task-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.task-category {
+  width: 30%;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.task-category h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #d9534f;
+  margin-bottom: 20px;
+}
+
+/* Task Card Styles */
+.task-card {
+  background-color: #333;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.task-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.task-card .task-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #d9534f;
+}
+
+.task-card .task-description {
+  margin: 10px 0;
+  color: #ddd;
+}
+
+.task-card .task-deadline,
+.task-card .task-priority {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.task-card .task-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.task-card .task-actions button {
+  background-color: #5bc0de;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task-card .task-actions button:hover {
+  background-color: #31b0d5;
+}
